@@ -1,32 +1,26 @@
 import uuid
 
 from django.core.mail import send_mail
+from django.db.models import Avg
 from django.shortcuts import get_object_or_404
 from django_filters.rest_framework import DjangoFilterBackend
-from django.db.models import Avg
 from rest_framework import filters, permissions, status, viewsets
-from rest_framework.decorators import api_view, action
+from rest_framework.decorators import action, api_view
 from rest_framework.pagination import (LimitOffsetPagination,
                                        PageNumberPagination)
 from rest_framework.response import Response
 
 from api_yamdb.settings import EMAIL_AUTH
-from .mixins import CreateListDestroy
 from reviews.models import Category, Comment, Genre, Review, Title, User
+
 from .filters import TitleFilter
+from .mixins import CreateListDestroy
 from .permissions import IsAdminOrReadOnly, IsUserOrAdminOrModerOrReadOnly
-from .serializers import (
-    CategoriesSerializer,
-    CommentSerializer,
-    GenresSerializer,
-    ReviewSerializer,
-    TitlesReadSerializer,
-    TitlesWriteSerializer,
-    UserAuthSerializer,
-    UserMeSerializer,
-    UserSerializer,
-    UserSignUpSerializer,
-)
+from .serializers import (CategoriesSerializer, CommentSerializer,
+                          GenresSerializer, ReviewSerializer,
+                          TitlesReadSerializer, TitlesWriteSerializer,
+                          UserAuthSerializer, UserMeSerializer, UserSerializer,
+                          UserSignUpSerializer)
 
 
 class CategoriesViewSet(CreateListDestroy):
