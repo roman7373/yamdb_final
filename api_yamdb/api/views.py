@@ -1,5 +1,6 @@
 import uuid
 
+from api_yamdb.settings import EMAIL_AUTH
 from django.core.mail import send_mail
 from django.db.models import Avg
 from django.shortcuts import get_object_or_404
@@ -9,8 +10,6 @@ from rest_framework.decorators import action, api_view
 from rest_framework.pagination import (LimitOffsetPagination,
                                        PageNumberPagination)
 from rest_framework.response import Response
-
-from api_yamdb.settings import EMAIL_AUTH
 from reviews.models import Category, Comment, Genre, Review, Title, User
 
 from .filters import TitleFilter
