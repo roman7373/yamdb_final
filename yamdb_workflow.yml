@@ -15,11 +15,8 @@ jobs:
 
     - name: Install dependencies
       run: | 
-        # обновление pip
-        python -m pip install --upgrade pip 
-        # установка flake8 и его плагинов
+        python -m pip install --upgrade pip
         pip install flake8 pep8-naming flake8-broken-line flake8-return flake8-isort
-        # установка зависимостей
         cd api_yamdb/
         pip install -r requirements.txt 
 
