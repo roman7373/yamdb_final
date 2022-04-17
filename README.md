@@ -66,7 +66,7 @@ YaMDB отправляет письмо с кодом подтверждения
 
 Произведения - /titles/, /titles/<title_id>/ Оценка - /titles/<title_id>/review/, /titles/<title_id>/review/<review_id>/ Комментарии - /titles/<title_id>/review/<review_id>/comment/, /titles/<title_id>/review/<review_id>/comment/<comment_id>/ Категории - /cathegories/ Произведениям - /genres/
 
-Подробное описание API приводится по адресу: /static/redoc.yaml
+Подробное описание API приводится по адресу: http://51.250.110.56/redoc
 
 
 Автор:
