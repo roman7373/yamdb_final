@@ -1,7 +1,6 @@
 СПРИНТ 16. yamdb_final
 
 Проект доступен по ссылке - http://51.250.110.56/api/v1/
-
 Бейдж о статусе работы workflow: ![yamdb](https://github.com/roman7373/yamdb_final/workflows/yamdb_workflow/badge.svg)
 
 Описание

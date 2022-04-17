@@ -8,13 +8,6 @@ services:
       - ./.env
   web:
     image: roman73/infra_web:latest
-    command: >
-      sh -c "python manage.py makemigrations users &&
-             python manage.py makemigrations reviews &&
-             python manage.py migrate &&
-             python manage.py collectstatic --no-input &&
-             python manage.py initadmin &&
-             gunicorn api_yamdb.wsgi:application --bind 0:8000"
     restart: always
     volumes:
       - static_value:/app/static/
