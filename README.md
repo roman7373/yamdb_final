@@ -2,7 +2,7 @@
 
 Проект доступен по ссылке - http://51.250.110.56/api/v1/
 
-Бейдж о статусе работы workflow: [![yamdb](https://github.com/roman7373/yamdb_final/workflows/yamdb_workflow/badge.svg)]
+Бейдж о статусе работы workflow: ![yamdb](https://github.com/roman7373/yamdb_final/workflows/yamdb_workflow/badge.svg)
 
 Описание
 Проект YaMDb собирает отзывы пользователей на произведения. Произведения (Titles) делятся на категории (Cathegories): «Книги», «Фильмы», «Музыка»; и могут относиться к различным жанрам (Genres). Аутентифицированные пользователи могут оставлять оценки (Reviews) с комментариями (Comments) к выбранным произведениям.
