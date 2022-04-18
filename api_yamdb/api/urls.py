@@ -40,5 +40,8 @@ urlpatterns = [
     path("v1/auth/signup/", views.signup_user, name="signup"),
     path("v1/auth/token/", views.get_auth_token, name="auth"),
     path("v1/", include(router_v1.urls)),
-    path("v1/redoc/", TemplateView.as_view(template_name="redoc.html"), name="redoc")
+    path("v1/redoc/",
+        TemplateView.as_view(template_name="redoc.html"),
+        name="redoc"
+        )
 ]
